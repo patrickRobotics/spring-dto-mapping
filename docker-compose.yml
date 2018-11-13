@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  db:
+    image: postgres:10.1-alpine
+    environment:
+    - POSTGRES_DB=questionmarks
+    - POSTGRES_PASSWORD=P@33w0rd
+    - POSTGRES_USER=postgres
+    ports:
+    - 5432:5432
+    volumes:
+    - postgres_data:/var/lib/postgresql/data/
+volumes:
+  postgres_data:
