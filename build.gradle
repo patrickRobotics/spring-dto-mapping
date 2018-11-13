@@ -29,4 +29,6 @@ dependencies {
 	compile('org.liquibase:liquibase-core')
 	runtime('org.postgresql:postgresql:42.1.4')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile('org.modelmapper:modelmapper:1.1.0')
+    compile('org.hibernate:hibernate-java8:5.1.0.Final')
 }
